@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 <body>
-    <header class="header">
+    <header  id="header">
         <nav class="nav">
-            <img src="https://picsum.photos/100/100" height="50" width="50" style="margin-top: 15px;" alt="">
+            <img src="https://picsum.photos/100/100" height="50" width="50"  alt="">
             <h1>just for test</h1>
+            <input type="checkbox" id="humbergur-menu"> 
+                <label for="humbergur-menu">
+                    <img src="./assets/images/ellipsis-solid.svg" style="margin: 10px 30px 0;" width="30" height="30" alt="">
+                    </label>
             <ul class="menu">
                 <li class="active"><a href=""> <span class=""><i class="fa-solid fa-circle"></i></span> Home</a></li>
                 <li><a href=""> <span class=""><i class="fa-solid fa-circle"></i></span> Home</a></li>
@@ -19,160 +25,179 @@
                 <li><a href=""> <span class=""><i class="fa-solid fa-circle"></i></span> Home</a></li>
                 <li><a href=""> <span class=""><i class="fa-solid fa-circle"></i></span> Home</a></li>
             </ul>
+            <input type="checkbox" id="humbergur-menu-lang"> 
+                <label for="humbergur-menu-lang" class="humbergur-menu-lang">
+                    EN
+                    </label>
+            <ul class="lang-mob">
+                <li>KU</li>
+                <li>EN</li>
+                <li>AR</li>
+            </ul>
+            
             <ul class="languages">
                 <li> <input type="radio" name="zman" id="kurdish"> <label for="kurdish">Kurdish</label></li>
-                <li><input type="radio" name="zman" id="english"><label for="english">English</label></li>
+                <li><input type="radio" checked name="zman" id="english"><label for="english">English</label></li>
                 <li><input type="radio" name="zman" id="arabic"> <label for="arabic"> arabic</label></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="hero">
-        <div class="container">
-            <h1>Kaplan Company</h1>
-            <blockquote>“Innovative Solutions for Your Industrial Project Needs”</blockquote>
-            <p>Kaplan is a leading firm for construction and providing services in the industrial sector in Iraq and Kurdistan, dedicated to driving the industrialization of the region by guiding entrepreneurs to establish and manage successful manufacturing projects.</p>
-            <a href="#" class="read-more">Read More <span class="arrow">→</span></a>
-        </div>
-    </section>
-    <section id="services">
-        <div class="container">
-            <div class="col">
-            <img src="./assets/images/service_png.png" width="100" height="100" alt="">
-            <h1>our services</h1>
+            <div class="container container-sm">
+                <h1 data-aos="fade-right">Kaplan Company</h1>
+                <blockquote>“Innovative Solutions for Your Industrial Project Needs”</blockquote>
+                <p data-aos="fade-left">Kaplan is a leading firm for construction and providing services in the industrial sector in Iraq and Kurdistan, dedicated to driving the industrialization of the region by guiding entrepreneurs to establish and manage successful manufacturing projects.</p>
+                <a href="#" class="read-more" data-aos="fade-right">Read More <span class="arrow">→</span></a>
+            </div>
+        </section>
+        <section  id="services" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+            <div class="container">
+                <div class="col">
+                    <img src="./assets/images/service_png.png" width="100" height="100" alt="">
+                    <h1>our services</h1>
                     <div class="grid-container">
-            <div class="service-item">
-                <div class="title">
-                <span class="icon">🔧</span>
-                <h3>Feasibility study</h3>
+                        <div class="service-item">
+                            <div class="title">
+                                <span class="icon">🔧</span>
+                                <h3>Feasibility study</h3>
+                            </div>
+                            <p>Evaluating the viability of a new manufacturing project and providing recommendations on how to move forward.</p>
+                            <a href="#" class="read-more" data-aos="fade-right">Read More <span class="arrow">→</span></a>
+                        </div>
+                        <div class="service-item">
+                            <div class="title">
+                                <span class="icon">🔧</span>
+                                <h3>Regulatory compliance</h3>
+                            </div>
+                            <p>Covers all aspects of compliance with different government directorates, including municipality, environment, investment, ministries of industry or trade, and any other relevant regulatory...</p>
+                            <a href="#" class="read-more" data-aos="fade-right">Read More <span class="arrow">→</span></a>
+                        </div>
+                        <div class="service-item">
+                            <div class="title">
+                                <span class="icon">🔧</span>
+                                <h3>Constructing & Management the Factory</h3>
+                            </div>
+                            <p>We handle the entire process of constructing a factory building, from site selection and design to implementation, to ensure quick and efficient completion. With our experts, you can be...</p>
+                            <a href="#" class="read-more" data-aos="fade-right">Read More <span class="arrow">→</span></a>
+                        </div>
+                        <div class="service-item">
+                            <div class="title">
+                                <span class="icon">🔧</span>
+                                <h3>Equipment sourcing</h3>
+                            </div>
+                            <p>We offer a comprehensive Equipment Sourcing service that includes everything from identifying needs to sourcing equipment, negotiating deals, and managing the procurement process.</p>
+                            <a href="#" class="read-more" data-aos="fade-right">Read More<span class="arrow">→</span></a>
+                        </div>
+                    </div>
                 </div>
-                <p>Evaluating the viability of a new manufacturing project and providing recommendations on how to move forward.</p>
-                <a href="#" class="read-more">Read More <span class="arrow">→</span></a>
             </div>
-            <div class="service-item">
-                <div class="title">
-                <span class="icon">🔧</span>
-                <h3>Regulatory compliance</h3>
-                </div>
-                <p>Covers all aspects of compliance with different government directorates, including municipality, environment, investment, ministries of industry or trade, and any other relevant regulatory...</p>
-                <a href="#" class="read-more">Read More <span class="arrow">→</span></a>
-            </div>
-            <div class="service-item">
-            <div class="title">
-                <span class="icon">🔧</span>
-                <h3>Constructing & Management the Factory</h3>
-            </div>
-                <p>We handle the entire process of constructing a factory building, from site selection and design to implementation, to ensure quick and efficient completion. With our experts, you can be...</p>
-                <a href="#" class="read-more">Read More <span class="arrow">→</span></a>
-            </div>
-            <div class="service-item">
-                <div class="title">
-                <span class="icon">🔧</span>
-                <h3>Equipment sourcing</h3>
-                </div>
-                <p>We offer a comprehensive Equipment Sourcing service that includes everything from identifying needs to sourcing equipment, negotiating deals, and managing the procurement process.</p>
-                <a href="#" class="read-more">Read More<span class="arrow">→</span></a>
-            </div>
-        </div>
-            </div>
-        </div>
-    </section>
+        </section>
     </main>
-     <section id="latest-projects">
+    <section id="latest-projects" >
         <h1 class="title">latest projects</h1>
         <hr class="hr">
-        <div class="flex">
-        <img src="https://picsum.photos/seed/picsum/200/300" alt="">
-        <div class="projects">
-        <div class="container">
-            <div class="info">
-
-            <h1>Title</h1>
-            <p>Potassium Sulfate & Hydrochloride Acid Factory</p>
-            <h1>Description</h1>
-            <ul>
-                <li>Field of activity: Chemical</li>
-                <li>Location: Sulaymaniyah/ Iraq</li>
-                <li>Area: 20,000-meter square</li>
-                <li>Completion date: on going</li>
-                <li>Scope: Comprehensive Regulatory compliance, Equipment Sourcing, Design and leading the project from the first steps.
-</li>
-            </ul>
-            <a href="#" class="read-more">Read More <span class="arrow">→</span></a>
+        <div class="flex flex-sm" data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0">
+            <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+            <div class="projects">
+                <div class="container">
+                    <div class="info">
+                        <h1>Title</h1>
+                        <p>Potassium Sulfate & Hydrochloride Acid Factory</p>
+                        <h1>Description</h1>
+                        <ul>
+                            <li>Field of activity: Chemical</li>
+                            <li>Location: Sulaymaniyah/ Iraq</li>
+                            <li>Area: 20,000-meter square</li>
+                            <li>Completion date: on going</li>
+                            <li>Scope: Comprehensive Regulatory compliance, Equipment Sourcing, Design and leading the project from the first steps.</li>
+                        </ul>
+                        <a href="#" class="read-more">Read More <span class="arrow">→</span></a>
+                    </div>
+                </div>
             </div>
-        </div>
-        </div>
         </div>
     </section>
     <section id="values">
         <div class="container">
             <div class="wrap-title">
-            <hr >
-            <h1 class="title">our values</h1>
-            <hr >
+                <hr>
+                <h1 class="title">our values</h1>
+                <hr>
             </div>
             <div class="flex">
-            <div class="value">
-<i class="fas fa-users-cog"></i>                <h3>Empathy</h3>
-            </div>
-            <div class="value">
-<i class="fas fa-users-cog"></i>                <h3>Innovation</h3>
-            </div>
-            <div class="value">
-<i class="fas fa-users-cog"></i>                <h3>Excellence</h3>
-            </div>
-            <div class="value">
-<i class="fas fa-users-cog"></i>                <h3>Excellence</h3>
-            </div>
+                <div class="value" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas icon fa-users-cog fa-2x"></i>
+                    <h3>Empathy</h3>
+                </div>
+                <div class="value " data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas icon fa-users-cog fa-2x"></i>
+                    <h3>Innovation</h3>
+                </div>
+                <div class="value" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-users-cog fa-2x icon"></i>
+                    <h3>Excellence</h3>
+                </div>
+                <div class="value" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-users-cog fa-2x icon"></i>
+                    <h3>Excellence</h3>
+                </div>
             </div>
             <div class="wrap-title" style="margin-top: 4rem;">
-            <hr >
-            <img src="./assets/images/service_png.png" width="50" height="50" alt="">
-            <hr >
+                <hr>
+                <img src="./assets/images/service_png.png" width="50" height="50" alt="">
+                <hr>
             </div>
             <div class="container2">
                 <div class="left">
                     <div class="wrap-text">
-
-                <h2>Vision</h2>
-<p>Our vision is to be the top firm in constructing and providing services in the industrial sector nationwide, delivering profitability to our clients, while leading industrialization in the region through our specialized expertise.
-</p>
+                        <h2 data-aos="fade-right">Vision</h2>
+                        <p data-aos="fade-right">Our vision is to be the top firm in constructing and providing services in the industrial sector nationwide, delivering profitability to our clients, while leading industrialization in the region through our specialized expertise.</p>
                     </div>
                 </div>
                 <div class="right">
                     <div class="wrap-text">
-
-                    <h2>Mission</h2>
-                    <p>To drive the industrialization of Iraq and the Kurdistan region by guiding aspiring entrepreneurs to successfully research the market, establish, and manage their manufacturing project.
-</p>
+                        <h2 data-aos="fade-left">Mission</h2>
+                        <p data-aos="fade-left">To drive the industrialization of Iraq and the Kurdistan region by guiding aspiring entrepreneurs to successfully research the market, establish, and manage their manufacturing project.</p>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
-    
-     <section id="about-us">
-        <h1 class="title">about-us</h1>
-        <hr class="hr">
+    <section id="about-us">
+        <h1 class="title" data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-offset="0">about-us</h1>
+        <hr class="hr" data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back">
         <div class="flex">
-        <img src="https://picsum.photos/seed/picsum/200/300" alt="">
-        <div class="projects">
-        <div class="container">
-            <div class="info">
-
-            <h1>Title</h1>
-            <p>Potassium Sulfate & Hydrochloride Acid Factory Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum provident repellat praesentium consequuntur culpa natus, minima, expedita asperiores quam, voluptate quis possimus tenetur obcaecati quisquam reprehenderit officiis veritatis unde suscipit!</p>
-           <div class="end">
-           <hr class="hr" >
-            <a href="#" class="read-more">Read More <span class="arrow">→</span></a>
-           </div>
+            <img data-aos="fade-right" src="https://picsum.photos/seed/picsum/200/300" alt="">
+            <div data-aos="fade-left" class="projects">
+                <div class="container">
+                    <div class="info">
+                        <h1>Title</h1>
+                        <p>Potassium Sulfate & Hydrochloride Acid Factory Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum provident repellat praesentium consequuntur culpa natus, minima, expedita asperiores quam, voluptate quis possimus tenetur obcaecati quisquam reprehenderit officiis veritatis unde suscipit!</p>
+                        <div class="end">
+                            <hr class="hr">
+                            <a href="#" class="read-more">Read More <span class="arrow">→</span></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
-        </div>
     </section>
-            <h1 class="title-contact">contact-us</h1>
-            <hr class="hr">
-        <section class="contact-section">
+    <h1 class="title-contact" data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-offset="0">contact-us</h1>
+    <hr class="hr" data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-offset="0">
+    <section class="contact-section" data-aos="fade-right">
         <div class="contact-info">
             <p>Dear valued visitor, thank you for visiting our factory's website. We appreciate your interest and would be delighted to assist you in any way we can. Please feel free to reach out to us using the contact information provided below:</p>
             <div class="info-item">
@@ -191,7 +216,7 @@
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
-        <div class="contact-form">
+        <div class="contact-form" data-aos="fade-left" data-aos-delay="100">
             <form action="#" method="post">
                 <label for="name">Your Name</label>
                 <input type="text" id="name" name="name" placeholder="Your Name...">
@@ -205,56 +230,61 @@
     </section>
     <footer id="footer">
         <div class="row">
-
-        <div class="col-social">
-            <h3>Kaplan</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima rem eum iste repellendus reiciendis quasi quae, fugit dicta neque id.</p>
-<div class="social-icons">
-                <a href="#"><i class="fab fa-telegram-plane"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>        </div>
-        <div class="col-navigation">
-            <h3>Navigation</h3>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">Home</a></li>
-            </ul>
-        </div>
-        <div class="col-services">
-             <h3>Services</h3>
-            <ul>
-                <li><a href="">Fisibility Study</a></li>
-                <li><a href="">Fisibility Study</a></li>
-                <li><a href="">Fisibility Study</a></li>
-                <li><a href="">Fisibility Study</a></li>
-                <li><a href="">Fisibility Study</a></li>
-            </ul>
-        </div>
-        <div class="col-contact-us">
-            <h3>contact us</h3>
-            <div class="phone">
-<i class="fas fa-phone"></i>                +964 7708817375
+            <div class="col-social">
+                <h3>Kaplan</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima rem eum iste repellendus reiciendis quasi quae, fugit dicta neque id.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
             </div>
-            <div class="email">
-<i class="fas fa-inbox"></i>                zhiwar@gmail.com
+            <div class="col-navigation">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Home</a></li>
+                </ul>
             </div>
-            <div class="location">
-        <p>
-<i class="fas fa-map-marker-alt"></i>
-
-         Iraq, Sulaymaniyah city, khak street, Daykm tower, 5th floor, flat no. 8
-</p>
+            <div class="col-services">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="">Fisibility Study</a></li>
+                    <li><a href="">Fisibility Study</a></li>
+                    <li><a href="">Fisibility Study</a></li>
+                    <li><a href="">Fisibility Study</a></li>
+                    <li><a href="">Fisibility Study</a></li>
+                </ul>
+            </div>
+            <div class="col-contact-us">
+                <h3>contact us</h3>
+                <div class="phone">
+                    <i class="fas fa-phone"></i> +964 7708817375
+                </div>
+                <div class="email">
+                    <i class="fas fa-inbox"></i> zhiwar@gmail.com
+                </div>
+                <div class="location">
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> Iraq, Sulaymaniyah city, khak street, Daykm tower, 5th floor, flat no. 8
+                    </p>
+                </div>
             </div>
         </div>
-        </div>
-        <hr >
-            <img src="./assets/images/service_png.png" width="50" height="50" alt="">
-            <hr >
+        <hr>
+        <img src="./assets/images/service_png.png" width="50" height="50" alt="">
+        <hr>
     </footer>
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+
 </body>
 </html>

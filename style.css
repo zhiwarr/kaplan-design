@@ -901,17 +901,16 @@ clip-path: polygon(100% 100%, 100% 36%, 0 63%, 0 100%);
 
 /* services-page */
 .service-page{
-display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     font-size: 1rem;
 }
-.container {
+.service-page .container {
     padding: 20px;
 }
 
-.title {
+.service-page .title {
     font-size: 2.5rem;
     color: #ff4c4c;
     margin-bottom: 20px;

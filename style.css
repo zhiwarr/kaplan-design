@@ -121,10 +121,15 @@ header.fixed {
 .nav #humbergur-menu-lang{
     display: none;
 }
+.lang-mob, #humbergur-menu-lang ,.humbergur-menu-lang,#humbergur-menu,.menu-dots{
+    display: none;
+}
 /* responsiveness of header */
 
 @media screen and (max-width: 768px) {
-    
+ .lang-mob, #humbergur-menu-lang ,.humbergur-menu-lang,.menu-dots{
+    display: block;
+}   
     .mob-menu{
         display:flex;
     }
